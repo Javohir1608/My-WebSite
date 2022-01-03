@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --black: #333;
+    --white: #fff;
+    --light_black: #999;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+}
+.resume-box{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    box-shadow: 0 0 40px rgb(0,0,0,0.09),
+    0 0 80px rgba(0,0,0,0.03);
+background: var(--white);
+justify-content: center;
+align-items: center;
+}
+.resume-box .left{
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.resume-box .left .imgBx{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.resume-box .left .imgBx img{
+    max-width: 200px;
+    border-radius: 50%;
+}
+.title-name{
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+.title-name h2{
+    font-weight: 500;
+    color: var(--black);
+}
+.title-name h3{
+    font-weight: 400;
+    color: var(--light_black);
+}
+.email{
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.email .email-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.email .email-box .fas{
+    font-size: 27px;
+    color: var(--black);
+    margin-right: 5px;
+}
+.email h2{
+    font-weight: 500;
+    color: var(--black);
+}
+.phone{
+    position: relative;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.phone .phone-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.phone .phone-box .fas{
+    font-size: 27px;
+    color: var(--black);
+    margin-right: 5px;
+}
+.phone h2{
+    font-weight: 500;
+    color: var(--black);
+}
+.resume-box .right{
+    width: 70%;
+    height: 100%;
+}
+.about{
+    position: relative;
+    margin: 30px 60px;
+}
+.about h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--light_black);
+}
+.birthday{
+    margin: 30px 60px;
+}
+.birthday h2{
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+.birthday .date{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+.birthday .date .kun,
+.birthday .date .oy,
+.birthday .date .yil{
+    font-size: 18px;
+    color: var(--light_black);
+    border: 1px solid var(--black);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.services{
+    position: relative;
+    margin: 30px 60px;
+}
+.services .title-services{
+    color: var(--black);
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.services .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .box .html{
+    width: 100px;
+    height: 100px;
+    background: #ff7f50;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .box .css{
+    width: 100px;
+    height: 100px;
+    background: #0059ff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .box .javascript{
+    width: 100px;
+    height: 100px;
+    background: #ffde4a;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .box .reactjs{
+    width: 100px;
+    height: 100px;
+    background: #172f3d;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .box .html h2,
+.services .box .css h2,
+.services .box .javascript h2,
+.services .box .reactjs h2{
+    color: var(--white);
+    letter-spacing: 1.5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Responsive */
+
+@media(max-width: 1050px){
+    .container{
+        height: 100%;
+    }
+    .resume-box{
+        flex-direction: column;
+        height: 70%;
+        margin: 80px 40px;
+    }
+    .resume-box .left{
+        border: none;
+      border-bottom: 1px solid var(--light_black);
+      width: 100%;
+    }
+    
+}
+@media(max-width: 900px){
+
+.birthday .date{
+    flex-direction: column;
+}
+.birthday .date .kun,
+.birthday .date .oy,
+.birthday .date .yil{
+margin: 20px 0;
+}
+.services .box{
+flex-direction: column;
+}
+.services .box .html,
+.services .box .css,
+.services .box .javascript,
+.services .box .reactjs{
+margin: 20px 0;
+}
+.about{
+    position: relative;
+    margin: 30px 0;
+}
+}
+
